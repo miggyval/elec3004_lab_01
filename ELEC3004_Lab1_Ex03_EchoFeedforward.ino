@@ -3,7 +3,7 @@
 // Rewritten by Miguel Valencia | School of EECS, UQ
 // Original code by Ian Clough | School of EECS, UQ
 // Feedforward echo:
-// y[n] = a*x[n] + (1 - a)*x[n - D]
+// y[n] = (1 - a)*x[n] + a*x[n - D]
 
 // Note: We require D < N to ensure the buffer is large enough
 const uint16_t N = 44900; // Circular buffer length in samples
