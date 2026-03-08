@@ -45,3 +45,26 @@ By the end of this experiment, you should be able to:
 - Describe the shape of a DAC output
 - Determine the sampling rate and signal frequency of a reconstructed signal
 - Explain the effects of filtering on a reconstructed signal
+
+### Experimental Procedure
+- After setting up the hardware and software, open the Arduino file `ELEC3004_Lab1_Ex01.ino`
+- Upload the program to the Arduino Due
+- Measure and record:
+  - the sample rate
+  - the signal frequency
+  - the signal amplitude
+- Change the `delayMicroseconds(0)` to so that the sample rate is at 50 kHz.
+- Measure and record:
+  -  the *new* sample rate
+  -  the *new* signal frequency
+  -  the signal amplitude
+- If the sample rate is not as expected change the delay accordingly
+- Change the line `analogWrite(DAC1, LUT[ctr1%16])` so that:
+  - the signal frequency doubles
+  - the sampling rate stays the same
+ 
+### Questions
+- What did you observe from this experiment? State your findings.
+- If the sample rate did not change as expected, why was it different?
+- Describe what happened when you changed `analogWrite(DAC1, LUT[ctr1%16])`.
+- What are the advantages of using a look-up-table and what is the alternative?
