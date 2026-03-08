@@ -47,24 +47,25 @@ By the end of this experiment, you should be able to:
 - Explain the effects of filtering on a reconstructed signal
 
 ### Experimental Procedure
-- After setting up the hardware and software, open the Arduino file `ELEC3004_Lab1_Ex01.ino`
+- After setting up the hardware and software, open the Arduino file `ELEC3004_Lab1_Ex01_LUT.ino`
 - Upload the program to the Arduino Due
 - Measure and record:
   - the sample rate
   - the signal frequency
   - the signal amplitude
-- Change the `delayMicroseconds(0)` to so that the sample rate is at 50 kHz.
+- Modify the `delayMicroseconds(0)` line to so that the sample rate is at 50 kHz.
 - Measure and record:
   -  the *new* sample rate
   -  the *new* signal frequency
   -  the signal amplitude
 - If the sample rate is not as expected change the delay accordingly
-- Change the line `analogWrite(DAC1, LUT[ctr1%16])` so that:
+- Modify the code so that:
   - the signal frequency doubles
   - the sampling rate stays the same
+- Hint: What does the line `n = (n + 1) % 1` do?
  
 ### Questions
 - What did you observe from this experiment? State your findings.
 - If the sample rate did not change as expected, why was it different?
-- Describe what happened when you changed `analogWrite(DAC1, LUT[ctr1%16])`.
+- Describe what happened when you modified `n = (n + 1) % 1`.
 - What are the advantages of using a look-up-table and what is the alternative?
