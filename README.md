@@ -49,7 +49,13 @@ The Arduino Due /ˈduːe/ (DOO-eh) is an open-source platform for embedded syste
 
 This particular device uses an 84 MHz 32-bit ARM microcontroller with a plethora of digital I/O and analogue I/O in the form of ADC, PWM and DAC.
 
+We will be using a look-up-table (LUT) to store an array of values that can be output using the DAC. This is used to establish baseline behaviour for the DSP system and understand how it works. This allows us to understand certain system limitations.
+
+We are implementing the system shown in this block diagram.
+
 ![LUT System](assets/images/lut_system.jpeg)
+
+Note,
 
 ## Setup
 ### Hardware Setup
