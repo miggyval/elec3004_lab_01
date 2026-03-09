@@ -48,6 +48,9 @@ In this experiment you will be using the Arduino Due to generate and output a si
 The Arduino Due /ˈduːe/ (DOO-eh) is an open-source platform for embedded systems development. 
 
 This particular device uses an 84 MHz 32-bit ARM microcontroller with a plethora of digital I/O and analogue I/O in the form of ADC, PWM and DAC.
+
+![LUT System](assets/images/lut_system.jpeg)
+
 ## Setup
 ### Hardware Setup
 1. Connect the Arduino Due to a computer with the micro-B USB cable using the programming port
